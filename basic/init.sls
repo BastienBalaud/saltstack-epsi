@@ -5,3 +5,6 @@ basic:
       - deltarpm
       - git
       - htop
+salt-minion:
+  service.running:
+    - enable: True
