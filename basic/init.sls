@@ -4,3 +4,4 @@ basic:
       - vim-enhanced
       - deltarpm
       - git
+      - htop
