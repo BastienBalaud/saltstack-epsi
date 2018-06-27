@@ -1,7 +1,5 @@
 nginx:
-  pkg.installed:
-    - pkgs:
-      - nginx
+  pkg.installed
   service.running:
     - enabled: True
   file.managed:
