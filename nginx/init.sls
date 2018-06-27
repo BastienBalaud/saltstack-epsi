@@ -3,7 +3,7 @@ nginx:
     - pkgs:
       - nginx
   service.running:
-    - enabled: True
+    - enable: True
   file.managed:
     - name: /etc/nginx/nginx.conf
     - source: salt://nginx/files/nginx.conf
