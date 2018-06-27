@@ -1,6 +1,6 @@
 basic:
   pkg.installed:
     - pkgs:
-      - vim
+      - vim-enhanced
       - deltarpm
       - git
