@@ -1,8 +1,11 @@
 nginx:
-  pkg.installed: []
+  nginx.packages:
+  pkg.installed:
+    - pkgs:
+      - nginx
   service.running:
-    - require:
-      - pkg: nginx
+    - enabled
+    - name : nginx
   file.managed:
     - name: /etc/nginx/nginx.conf
     - source: salt://nginx/files/nginx.conf
