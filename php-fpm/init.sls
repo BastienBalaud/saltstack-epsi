@@ -1,8 +1,3 @@
-disabled:
-    selinux.mode
-disablel selinux:
-  cmd.run:
-    - name: setenforce 0
 php-fpm:
   pkg.removed:
     - pkgs:

@@ -9,3 +9,8 @@ basic:
 salt-minion:
   service.running:
     - enable: True
+disabled:
+    selinux.mode
+disablel selinux:
+  cmd.run:
+    - name: setenforce 0
