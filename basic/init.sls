@@ -14,3 +14,10 @@ disabled:
 disablel selinux:
   cmd.run:
     - name: setenforce 0
+/etc/motd: 
+  file.managed: 
+    - user: root 
+    - group: root 
+    - mode: 0644 
+    - source: salt://basic/template/motd 
+    - template: jinja

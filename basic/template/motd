@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------
+Welcome to {{ grains['fqdn'] }}
+
+Server Stats at a Glance:
+------------------------
+
+OS: {{ grains['osfullname'] }}
+Kernel: {{ grains['kernelrelease'] }}
+Memory: {{ grains['mem_total'] }} MB
+
+This server is managed using a configuration management system (saltstack.org).
+Changes made to this box directly will likely be over-written by SALT. Instead
+modify server configuration via the configuration management git repository.
+------------------------------------------------------------------------------
