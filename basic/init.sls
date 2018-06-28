@@ -6,6 +6,7 @@ basic:
       - git
       - htop
       - sl
+      - policycoreutils-python 
 salt-minion:
   service.running:
     - enable: True
