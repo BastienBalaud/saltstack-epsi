@@ -7,9 +7,9 @@ php-fpm Remi repo:
     - name: remi-release-7
     - sources:
       - remi-release-7: "https://rpms.remirepo.net/enterprise/remi-release-7.rpm"
-php72-fpm:
+php72-php-fpm:
   pkg.installed:
     - pkgs:
-      - php72-fpm
+      - php72-php-fpm
   service.running:
     - enable: True
