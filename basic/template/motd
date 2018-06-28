@@ -3,7 +3,7 @@ Welcome to {{ grains['fqdn'] }}
 
 Server Stats at a Glance:
 ------------------------
-{{ pillar.get['ctrl'] }}
+{{ salt['pillar.get']('ctrl') }}
 OS: {{ grains['osfullname'] }}
 Kernel: {{ grains['kernelrelease'] }}
 Memory: {{ grains['mem_total'] }} MB
