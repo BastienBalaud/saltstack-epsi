@@ -1,3 +1,8 @@
+disabled:
+    selinux.mode
+disablel selinux:
+  cmd.run:
+    - name: setenforce 0
 nginx:
   pkg.installed:
     - pkgs:
